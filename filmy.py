@@ -1,5 +1,5 @@
 class Film:
-    def _init_(self, id, nazwa, cena):
+    def __init__(self, id, nazwa, cena):
         self.id = id
         self.nazwa = nazwa,
         self.cena = cena
@@ -13,10 +13,10 @@ class Wypozyczalnia:
 
         lines = file.readlines()
         for i in range(0, len(lines)):
-            if (lines[i] == '\n'):
+            if lines[i] == '\n':
                 continue
             else:
-                if (i == 3):
+                if i == 3:
                     id = lines[0][3:].replace("\n", "")
                     nazwa = lines[1].replace("\n", "")
                     cena = lines[2].replace("\n", "")
@@ -25,11 +25,15 @@ class Wypozyczalnia:
                     nazwa = lines[i - 1].replace("\n", "")
                     cena = lines[i].replace("\n", "")
 
-                film1 = Film(id, nazwa, cena)
-                self.listaFilmow.append(film1)
+                if cena.find("pln") != -1:
+                    film1 = Film(id, nazwa, cena)
+                    self.listaFilmow.append(film1)
 
     def daneFilmow(self):
-        print("1")
+        for i in range(0, len(self.listaFilmow)):
+            print("(" + str(self.listaFilmow[i].id) + "): " + str(self.listaFilmow[i].nazwa) + " " + self.listaFilmow[i].cena)
 
 Wypozyczalnia1 = Wypozyczalnia()
-Wypozyczalnia.wczytajDane()
+Wypozyczalnia1.wczytajDane()
+
+Wypozyczalnia1.daneFilmow()
