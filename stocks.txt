@@ -1,0 +1,7 @@
+Apple,
+150.2,
+buy 4;
+
+Microsoft,
+540,
+sell 5
