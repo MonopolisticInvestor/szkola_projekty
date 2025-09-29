@@ -9,39 +9,99 @@
 </head>
 <body>
     <nav class="navbar bg-success text-white navbar-expand-lg px-3">
-        <div class="navbar-brand text-white">Moje portfolio</div>
-        <button class="navbar-toggler text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" data-bs-toggle="collapse" data-bs-target="#navbarText1" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarText1">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item disabled">
-                    <a href="#" class="nav-link text-white">O mnie</a>
-                </li>
-                <li class="nav-item disabled">
-                    <a href="#" class="nav-link text-white">Projekty</a>
-                </li>
-                <li class="nav-item disabled">
-                    <a href="#" class="nav-link text-white">Kontakt</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="navbar-brand text-white">Moje portfolio</div>
+            <button class="navbar-toggler text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" data-bs-toggle="collapse" data-bs-target="#navbarText1" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarText1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item disabled">
+                        <a href="#" class="nav-link text-white">O mnie</a>
+                    </li>
+                    <li class="nav-item disabled">
+                        <a href="#" class="nav-link text-white">Projekty</a>
+                    </li>
+                    <li class="nav-item disabled">
+                        <a href="#" class="nav-link text-white">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <div class="container">
-        <div class="d-flex justify-content-center align-items-center mt-4 sm-flex-column">
-            <img src="mountains.jpg" width="500" height="500" class="rounded-circle">
-            <div class="d-flex flex-column p-4">
-                <h1 class="text-primary">O mnie</h1>
-                <p>Jestem programista oraz inwestorem. Prowadzę blog o inwestowaniu, <a href="https://MonopolisticInvestor.Substack.com">MonopolisticInvestor.Substack.com</a></p>
+        <div class="container d-flex justify-content-center align-items-center mt-4">
+            <div class="row">
+                <div class="col col-6 col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <img src="mountains.jpg" width="500" height="500" class="rounded-circle">
+                </div>
+                <div class="col col-6 col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-left p-4">
+                    <h1 class="text-primary">O mnie</h1>
+                    <p>Jestem programistą oraz inwestorem. Prowadzę blog o inwestowaniu, <a href="https://MonopolisticInvestor.Substack.com">MonopolisticInvestor.Substack.com</a></p>
+                </div>
             </div>
         </div>
         
-        <div class="container">
-            <h2>Moje projekty</h2>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center">Moje projekty</h2>
+
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="https://substackcdn.com/image/fetch/$s_!Ugyn!,w_1200,h_400,c_pad,f_auto,q_auto:best,fl_progressive:steep,b_auto:border,b_rgb:FFFFFF/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb64227e7-ee23-4224-9008-2df19f5cfced_500x500.png" />
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Projekt 1</h4>
+                                <p class="card-text">Inwestowanie na giełdzie - newsletter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="https://substackcdn.com/image/fetch/$s_!Ugyn!,w_1200,h_400,c_pad,f_auto,q_auto:best,fl_progressive:steep,b_auto:border,b_rgb:FFFFFF/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb64227e7-ee23-4224-9008-2df19f5cfced_500x500.png" />
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Projekt 2</h4>
+                                <p class="card-text">Inwestowanie na giełdzie - newsletter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="https://substackcdn.com/image/fetch/$s_!Ugyn!,w_1200,h_400,c_pad,f_auto,q_auto:best,fl_progressive:steep,b_auto:border,b_rgb:FFFFFF/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb64227e7-ee23-4224-9008-2df19f5cfced_500x500.png" />
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">Projekt 3</h4>
+                                <p class="card-text">Oprogramowanie służące do analizy fosy ekonomicznej firmy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-secondary">Kontakt</h2>
+        <form class="p-5">
+            <div class="row">
+                <div class="col col-12 col-md-6">
+                    <label for="name">Imię:</label>
+                    <input class="form-control" id="name" type="text" placeholder="Wpisz swoje imię">
+                </div>
+                 
+                <div class="col col-12 col-md-6">
+                    <label for="email">Email:</label>
+                    <input class="form-control" id="email" type="email" placeholder="Wpisz swój email">
+                </div>
+            </div>
+            <label for="message">Wiadomość:</label>
+            <textarea class="form-control" id="message" type="text" placeholder="Wpisz swoją wiadomość"></textarea>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center align-items-top text-white bg-secondary">
+        <p>© Antoni Nabzdyk. Wszelkie prawa zastrzeżone</p>
     </div>
 </body>
 </html>
