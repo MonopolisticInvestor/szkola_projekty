@@ -10,12 +10,6 @@
 </head>
 
 <style>
-    @media (min-width: 992px) {
-        #museumOfCandy_header {
-            width: 50%;
-        }
-    }
-    
     .navbar.scrolled {
         background: rgb(222,192,222);
         transition: background 500ms;
@@ -47,30 +41,32 @@
     </nav>
 
     <div class="d-flex flex-row container-fluid">
-        <div class="text-white flex-column bg-danger-subtle p-5 d-none d-xxl-flex" id="museumOfCandy_header">
-            <h2 class="display-1">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
-            <h2 class="display-1">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
-            <h2 class="display-1">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
-            <h2 class="display-1">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
-            <h2 class="display-1">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
-            <h2 class="display-1">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
-            <h2 class="display-1">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
-        </div>
-        <div class="">
-            <img src="hand2.png" class="img-fluid">
+        <div class="row">
+            <div class="text-white flex-column bg-danger-subtle p-5 d-none d-xl-flex col col-6 justify-content-center align-items-center" id="museumOfCandy_header">
+                <h1 class="">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h1>
+                <h1 class="">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h1>
+                <h1 class="">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h1>
+                <h1 class="">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h1>
+                <h1 class="">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h1>
+                <h1 class="">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h1>
+                <h1 class="">MUSEUM<span class="text-danger">/</span>OF<span class="text-danger">/</span>CANDY</h2>
+            </div>
+            <div class="col col-12 col-xl-6">
+                <img src="hand2.png" class="img-fluid">
+            </div>
         </div>
     </div>
 
     <div class="d-flex flex-row container-fluid" id="milkImg_container">
         <div class="row">
-            <div id="milk_img" class="col col-12 col-xxl-6 order-2 order-sm-1">
+            <div id="milk_img" class="col col-12 col-lg-6 order-2 order-sm-2 order-lg-1">
                 <img src="milk.png" class="img-fluid" >
             </div>
         
-            <div class="d-flex col text-danger flex-column justify-content-center align-items-center bg-danger-subtle text-center p-5 col-xxl-6 order-1 order-sm-2">
+            <div class="d-flex col text-danger flex-column justify-content-center align-items-center bg-danger-subtle text-center p-5 col-lg-6 order-1 order-sm-1 order-lg-2">
                 <h2>MUSEUM OF CANDY</h2>
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img src="lolli_icon.png" width="64" height="64"/>
+                    <img src="lolli_icon.png" width="64" height="64" class="d-lg-flex d-none"/>
                     <p class="w-34">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus quas architecto tempore debitis excepturi id vero autem natus cupiditate! Delectus deleniti molestiae aut explicabo. Voluptatum ex laborum magni repellat.</p>
                 </div>
             </div>
@@ -79,15 +75,15 @@
     
     <div class="d-flex flex-row container-fluid">
         <div class="row">
-            <div class="d-flex col text-danger flex-column justify-content-center align-items-center bg-danger-subtle text-center p-5 col-xxl-6 order-2 order-sm-1">
+            <div class="d-flex col text-danger flex-column justify-content-center align-items-center bg-danger-subtle text-center p-5 col-lg-6">
                 <h2>MUSEUM OF CANDY</h2>
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img src="lolli_icon.png" width="64" height="64"/>
+                    <img src="lolli_icon.png" width="64" height="64" class="d-lg-flex d-none"/>
                     <p class="w-34">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus quas architecto tempore debitis excepturi id vero autem natus cupiditate! Delectus deleniti molestiae aut explicabo. Voluptatum ex laborum magni repellat.</p>
                 </div>
             </div>
             
-            <div class="col col-12 col-xxl-6 order-1 order-sm-2">
+            <div class="col col-12 col-lg-6 order-2 order-sm-2">
                 <img src="gumball.png" class="img-fluid" >
             </div>
         </div>
@@ -95,14 +91,14 @@
 
     <div class="d-flex flex-row container-fluid ">
         <div class="row">
-            <div class="col col-12 col-xxl-6 order-1 order-sm-2">
+            <div class="col col-12 col-lg-6 order-sm-2 order-2 order-lg-1">
                 <img src="sprinkles.png" class="img-fluid" >
             </div>
 
-            <div class="d-flex col text-danger flex-column justify-content-center align-items-center bg-danger-subtle text-center p-5 col-xxl-6 order-2 order-sm-1">
+            <div class="d-flex col text-danger flex-column justify-content-center align-items-center bg-danger-subtle text-center p-5 col-lg-6 order-sm-1 order-1 order-lg-2">
                 <h2>MUSEUM OF CANDY</h2>
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img src="lolli_icon.png" width="64" height="64"/>
+                    <img src="lolli_icon.png" width="64" height="64" class="d-lg-flex d-none"/>
                     <p class="w-34">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus quas architecto tempore debitis excepturi id vero autem natus cupiditate! Delectus deleniti molestiae aut explicabo. Voluptatum ex laborum magni repellat.</p>
                 </div>
             </div>
